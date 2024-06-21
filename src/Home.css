@@ -1,0 +1,469 @@
+
+
+.Home{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color:transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+ 
+    height: 3rem;
+    background-color: black;
+    padding-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header .logo{
+    width: 30px;
+    border-radius: 15px;
+    position: absolute;
+    left: 20px;
+}
+.title{
+    color: white;
+}
+.contest-btn{
+  width: 6rem;
+  font-size: 1rem;
+  position:fixed;
+  top: 0.6rem;
+  right: 1rem;
+  border-radius: 20px;
+  background-color: yellow;
+  color: gray;
+  animation: inOutAnimation 2s infinite;
+}
+@keyframes inOutAnimation{
+  0%,100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+    opacity: 0.8s;
+    color: black;
+    border: 2px solid white;
+  }
+}
+.topic{
+
+
+    height: 3.5rem;
+    background-color:aliceblue;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: start;
+    padding: 0.9rem;
+   
+    overflow-y: hidden;
+}
+.topic .topic_con{
+    margin-left: 20px;
+    height: 2rem;
+    width: 120px;
+    border-radius: 0.8rem;
+   
+    color: rgb(34, 33, 33);
+    background-color:transparent;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold  ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    margin-top: 0.5rem;
+    width: 90%;
+    height: 80vh; /* Full viewport height */
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: transparent;
+ 
+
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    max-height: 50%;
+  }
+  
+  .col-sm-12 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .col-md-6, .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+  }
+  
+  #col1 {
+    background-color: transparent;
+    color: white;
+    padding: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+   
+  }
+  
+  .question {
+    text-align: left;
+    width: 50%;
+    height: 90%;
+    
+    border-radius: 0px;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .disclaimer{
+    font-size: 14px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .question_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fc5508;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .question_ques {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  #col2{
+    padding-left: 30px;
+  }
+  #tick{
+   display: none;
+     width: 2rem;
+   }
+  
+  .code {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons {
+    padding: 0.3rem 0.4rem;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0px;
+    cursor: pointer;
+    border: none;
+   
+    background-color: rgb(40, 39, 39);
+    text-align: end;
+   
+  }
+  
+  .buttons .cancel {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons .next {
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 0 20px;
+    padding: 0.3rem 0.6rem;
+    
+    border-radius: 5px;
+  }
+  
+  .buttons .done {
+    cursor: pointer;
+
+    background-color: rgb(59, 247, 59);
+    color: white;
+    border: none;
+    padding: 0.3rem;
+    
+    border-radius: 5px;
+
+  }
+
+.navBar{
+  width:20%;
+  height: 80vh;
+  opacity: 0.9;
+  position: absolute;
+  background-color: rgb(62, 60, 60);
+  color: white;
+  top: 7rem;
+  text-align: left;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif8;
+  border: 2px solid black;
+  overflow-y: auto;
+  display: none;
+}
+
+.nav-list {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  width: 90%;
+}
+
+.nav-list:hover {
+  background-color: rgb(171, 169, 169);
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+#close{
+  position: absolute;
+  top:7.3rem;
+  left: 22%;
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navBar{
+      width:70%;
+      height: 60vh;
+      position: absolute;
+      background-color: black;
+      color: white;
+      top: 7rem;
+      text-align: left;
+      padding: 20px;
+      margin-left: 10px;
+      margin-top: 0px;
+
+      border-radius: 10px;
+    
+    }
+    #close{
+      position: absolute;
+      top:6.6rem;
+      left: 74%;
+   
+    }
+    .col-md-6, .col-lg-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .background_img{
+        height: 100vh;
+        width: auto;
+    }
+
+.topic .topic_con{
+  font-size: 13px;
+  width: 100px;
+  margin-top: 5px;
+}
+
+
+.contest-btn{
+     width: 4rem;
+     top: 0.8rem;
+     font-size: 0.8rem;
+}
+
+    .container {
+    
+      width: 100vw;
+      height: 90vh; /* Full viewport height */
+      display: flex;
+      flex-direction: column;
+  
+      background-color: transparent;
+    }
+    
+ 
+      .question {
+        width: 100%;
+        height: auto;
+        max-height: 40%;
+        border-radius: 5px;
+        margin-top: 0px;
+        background-color: rgb(249, 248, 248);
+        padding: 10px;
+        color: black;
+        border: 2px solid white;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+      
+      .question_title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #fb7515;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .question_ques {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        font-family:Arial, Helvetica, sans-serif;
+        
+      }
+      
+  
+      .code {
+        width: 100%;
+        height: 50%;
+        background-color: #272822;
+        color: #f8f8f2;
+        padding: 0px;
+        border-radius: 5px;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.8);
+        margin-top: 10px;
+      }
+      
+      .buttons {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin-top: 0px;
+        cursor: pointer;
+        border: none;
+        
+        background-color:rgb(40, 39, 39);
+        text-align: center;
+        position:relative;
+        bottom: 0px;
+       
+      }
+      
+      .buttons .cancel {
+        background-color: grey;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .buttons .next {
+        cursor: pointer;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+      
+        margin: 0 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      
+      .buttons .done {
+        cursor: pointer;
+    
+        background-color: rgb(59, 247, 59);
+        color: white;
+        border: 1px solid white;
+        
+        padding: 5px 10px;
+        border-radius: 5px;
+    
+      }
+      
+  }
+  
+@media (min-width:1024px){
+    .background_img{
+        height:auto;
+        width: 100vw;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+    .background_img{
+        height: 100vh;
+        width: auto;
+    }
+}

@@ -1,0 +1,533 @@
+{
+
+  "Practice":[
+    {
+        "id": 1,
+        "title": "Print 'Hello, World!'",
+        "question": "Write a C++ program to print 'Hello, World!'.",
+        "code": "#include <iostream>\nint main() {\n    std::cout << \"--------\" << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id":2 ,
+
+        "title": "Add Two Numbers",
+        "question": "Write a C++ program to add two numbers input by the user.",
+        "code": "#include <iostream>\nint main() {\n    int a, b, sum;\n    std::cout << \"Enter two numbers: \";\n    std::cin >> a >> b;\n    sum = a ----- b;\n    std::cout << \"Sum: \" << sum << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    int a, b, sum;\n    std::cout << \"Enter two numbers: \";\n    std::cin >> a >> b;\n    sum = a + b;\n    std::cout << \"Sum: \" << sum << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id": 3,
+
+        "title": "Find the Largest Number",
+        "question": "Write a C++ program to find the largest of two numbers.",
+        "code": "#include <iostream>\nint main() {\n    int a, b;\n    std::cout << \"Enter two numbers: \";\n    std::cin >> a >> b;\n    if (a ---- b)\n        std::cout << \"Largest number: \" << a << std::endl;\n    else\n        std::cout << \"Largest number: \" << b << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    int a, b;\n    std::cout << \"Enter two numbers: \";\n    std::cin >> a >> b;\n    if (a > b)\n        std::cout << \"Largest number: \" << a << std::endl;\n    else\n        std::cout << \"Largest number: \" << b << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id": 4,
+
+        "title": "Check Even or Odd",
+        "question": "Write a C++ program to check if a number is even or odd.",
+        "code": "#include <iostream>\nint main() {\n    int num;\n    std::cout << \"Enter a number: \";\n    std::cin >> num;\n    if (num ---- 2 == 0)\n        std::cout << num << \" is even.\" << std::endl;\n    else\n        std::cout << num << \" is odd.\" << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    int num;\n    std::cout << \"Enter a number: \";\n    std::cin >> num;\n    if (num % 2 == 0)\n        std::cout << num << \" is even.\" << std::endl;\n    else\n        std::cout << num << \" is odd.\" << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id": 5,
+
+        "title": "Calculate Factorial",
+        "question": "Write a C++ program to calculate the factorial of a number.",
+        "code": "#include <iostream>\nint main() {\n    int n, factorial = 1;\n    std::cout << \"Enter a number: \";\n    std::cin >> n;\n    for (int i = 1; i <= n; ++i)\n        factorial -----= i;\n    std::cout << \"Factorial: \" << factorial << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    int n, factorial = 1;\n    std::cout << \"Enter a number: \";\n    std::cin >> n;\n    for (int i = 1; i <= n; ++i)\n        factorial *= i;\n    std::cout << \"Factorial: \" << factorial << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id":6 ,
+
+        "title": "Find the Sum of Array Elements",
+        "question": "Write a C++ program to find the sum of elements in an array.",
+        "code": "#include <iostream>\nint main() {\n    int n, sum = 0;\n    std::cout << \"Enter number of elements: \";\n    std::cin >> n;\n    int arr[-----];\n    std::cout << \"Enter elements: \";\n    for (int i = 0; i < n; ++i) {\n        std::cin >> arr[i];\n        sum -------= arr[i];\n    }\n    std::cout << \"Sum of elements: \" << sum << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    int n, sum = 0;\n    std::cout << \"Enter number of elements: \";\n    std::cin >> n;\n    int arr[n];\n    std::cout << \"Enter elements: \";\n    for (int i = 0; i < n; ++i) {\n        std::cin >> arr[i];\n        sum += arr[i];\n    }\n    std::cout << \"Sum of elements: \" << sum << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id":7 ,
+
+        "title": "Reverse a String",
+        "question": "Write a C++ program to reverse a string.",
+        "code": "#include <iostream>\n#include <string>\nint main() {\n    std::string str;\n    std::cout << \"Enter a string: \";\n    std::cin >> str;\n    std::string reversed_str(str.-------, str.rend());\n    std::cout << \"Reversed string: \" << reversed_str << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\n#include <string>\nint main() {\n    std::string str;\n    std::cout << \"Enter a string: \";\n    std::cin >> str;\n    std::string reversed_str(str.rbegin(), str.rend());\n    std::cout << \"Reversed string: \" << reversed_str << std::endl;\n    return 0;\n}"
+    
+      }
+],
+
+    "Tricky":[
+      {
+        "id": 1,
+        "title": "XOR operation",
+        "question": "Check if two numbers are equal using the Bitwise XOR operator (^).\n\nTest Cases:\n\nInput: x=10, y=10\nOutput: x is equal to y\n\nInput: x=10, y=9\nOutput: x is not equal to y",
+        "code": "int main()\n{\n   int x = 10;\n   int y = 10;\n   \n   if (------(x ------ y))\n      cout << \" x is equal to y \";\n   else\n      cout << \" x is not equal to y \";\n   \n   return 0;\n}",
+        "correct_code": "int main()\n{\n   int x = 10;\n   int y = 10;\n   \n   if (!(x ^ y))\n      cout << \" x is equal to y \";\n   else\n      cout << \" x is not equal to y \";\n   \n   return 0;\n}"
+     },
+     {
+      "id": 2,
+      "title": "Recursive Function with cout",
+      "question": "Print numbers from 1 to N using a recursive function with cout operator.\n\n Input: N=10\n Output: 1 2 3 4 5 6 7 8 9 10",
+      "code": "int N = 10;\n\nint main()\n{\n  static int x = 1;\n  if (cout << x << \" \" && x++ < N && -----)\n  { }\n  return 0;\n}",
+      "correct_code": "int N = 10;\n\nint main()\n{\n  static int x = 1;\n  if (cout << x << \" \" && x++ < N && main())\n  { }\n  return 0;\n}"
+   },
+   {
+      "id": 3,
+      "title": "Swap Two Variables",
+      "question": "Swap two numbers without using a third variable.\n\n Input: x=10, y=70\n Output: x=70, y=10",
+      "code": "int main()\n{\n   int x = 10;\n   int y = 70;\n\n   x = x ----- y;\n   y = x - y;\n   x = x ----- y;\n\n   cout << \"X : \" << x << \"\\n\";\n   cout << \"Y : \" << y << \"\\n\";\n   \n   return 0;\n}",
+      "correct_code": "int main()\n{\n   int x = 10;\n   int y = 70;\n\n   x = x + y;\n   y = x - y;\n   x = x - y;\n\n   cout << \"X : \" << x << \"\\n\";\n   cout << \"Y : \" << y << \"\\n\";\n   \n   return 0;\n}"
+   },
+   {
+      "id": 4,
+      "title": "Find Max and Min Using Arithmetic",
+      "question": "Find the maximum and minimum of two numbers using arithmetic operations.\n\n Input: a=15, b=20\n Output: max=20, min=15",
+      "code": "int main()\n{\n   int a = 15, b = 20;\n   printf(\"max = %d\\n\", ((a + b) ---- abs(a - b)) / 2);\n   printf(\"min = %d\", ((a + b) ---- abs(a - b)) / 2);\n   return 0;\n}",
+      "correct_code": "int main()\n{\n   int a = 15, b = 20;\n   printf(\"max = %d\\n\", ((a + b) + abs(a - b)) / 2);\n   printf(\"min = %d\", ((a + b) - abs(a - b)) / 2);\n   return 0;\n}"
+   },
+   {
+      "id": 5,
+      "title": "Find Max Unsigned Int Value",
+      "question": "Find the maximum value of an unsigned int using bitwise NOT operation.\n\n Input: N/A\n Output: Max value: 4294967295",
+      "code": "int main()\n{\n   unsigned int max;\n   max = 0;\n   max = ----max;\n\n   std::cout << \"Max value : \" << max;\n\n   return 0;\n}",
+      "correct_code": "int main()\n{\n   unsigned int max;\n   max = 0;\n   max = ~max;\n\n   std::cout << \"Max value : \" << max;\n\n   return 0;\n}"
+   },
+   {
+      "id": 6,
+      "title": "Sum of Two Numbers Without Negative Sign",
+      "question": "Calculate the sum of two numbers without using the negative sign.\n\n Input: a=5, b=5\n Output: sum=10",
+      "code": "\nint main()\n{\n  int a = 5;\n  int b = 5;\n  int sum = ----( -a ---- b );\n  cout << sum;\n  return 0;\n}",
+      "correct_code": "\nint main()\n{\n  int a = 5;\n  int b = 5;\n  int sum = -( -a - b );\n  cout << sum;\n  return 0;\n}"
+   },
+   {
+    "id": 7,
+    "title": "Conditional Output with cout",
+    "question": "Output 'geeksforgeeks' using a conditional statement with cout operator.\n\n Input: N/A\n Output: geeksforgeeks",
+    "code": "\nint main()\n{\n    if (----(cout << \"geeks\"))\n    cout <<\" geeks \";\n    else\n    cout << \"forgeeks \";\n    \n    return 0;\n}",
+    "correct_code": "\nint main()\n{\n    if (!(cout << \"geeks\"))\n    cout <<\" geeks \";\n    else\n    cout << \"forgeeks \";\n    \n    return 0;\n}"
+ },
+ {
+    "id": 8,
+    "title": "Right Shift Operation",
+    "question": "Perform a right shift operation on an integer and output the result.\n\n Input: n=4\n Output: 1",
+    "code": "\nint main()\n{\n   int n = 4;\n   n = n ---- 2;\n   cout << n;\n   return 0;\n}",
+    "correct_code": "\nint main()\n{\n   int n = 4;\n   n = n >> 2;\n   cout << n;\n   return 0;\n}"
+ },
+ {
+    "id": 9,
+    "title": "Check Endianness",
+    "question": "Check the endianness of the system using a simple C++ program.\n\n Input: N/A\n Output: LITTLE ENDIAN",
+    "code": "\nint main()\n{\n   unsigned int n = 1;\n   char *c = (char*)----;\n    \n   if (*c)\n       std::cout << \"LITTLE ENDIAN\";\n   else\n       std::cout << \"BIG ENDIAN\";\n    \n   return 0;\n}",
+    "correct_code": "\nint main()\n{\n   unsigned int n = 1;\n   char *c = (char*)&n;\n    \n   if (*c)\n       std::cout << \"LITTLE ENDIAN\";\n   else\n       std::cout << \"BIG ENDIAN\";\n    \n   return 0;\n}"
+ }
+ 
+     
+    ],
+
+    "Loop":[
+      {
+        "id": 1,
+        "title": "Nested Loop Pattern",
+        "question": "Print the following pattern using nested loops:\n\nInput: n=3\nOutput:\n1\n12\n123\n\nInput: n=4\nOutput:\n1\n12\n123\n1234",
+        "code": "\nint main() {\n  int n = 3;\n  for (int i = 1; i <= n; ++i) {\n    for (int j = 1; j <= -------; ++j) {\n      cout << j;\n    }\n    cout << endl;\n  }\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 3;\n  for (int i = 1; i <= n; ++i) {\n    for (int j = 1; j <= i; ++j) {\n      cout << j;\n    }\n    cout << endl;\n  }\n  return 0;\n}"
+      },
+      {
+        "id": 2,
+        "title": "Sum of Even Numbers",
+        "question": "Calculate the sum of even numbers up to a given number using a loop.\n\nInput: n=10\nOutput: 30 (2+4+6+8+10)\n\nInput: n=20\nOutput: 110 (2+4+6+8+10+12+14+16+18+20)",
+        "code": "\nint main() {\n  int n = 10, sum = 0;\n  for (int i = ------; i <= n; i += 2) {\n    sum += i;\n  }\n  cout << ------;\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 10, sum = 0;\n  for (int i = 2; i <= n; i += 2) {\n    sum += i;\n  }\n  cout << sum;\n  return 0;\n}"
+      },
+      {
+        "id": 3,
+        "title": "Reverse a Number",
+        "question": "Reverse the digits of a given number using a loop.\n\nInput: n=12345\nOutput: 54321\n\nInput: n=98765\nOutput: 56789",
+        "code": "\nint main() {\n  int n = 12345, rev = 0;\n  while (n ----- 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n  }\n  cout << ------;\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 12345, rev = 0;\n  while (n != 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n  }\n  cout << rev;\n  return 0;\n}"
+      },
+      {
+        "id": 4,
+        "title": "Fibonacci Series",
+        "question": "Print the first N Fibonacci numbers using a loop.\n\nInput: n=5\nOutput: 0 1 1 2 3\n\nInput: n=7\nOutput: 0 1 1 2 3 5 8",
+        "code": "\nint main() {\n  int n = 5, a = 0, b = 1, next;\n  for (int i = 0; i < n; ++i) {\n    if (i ------ 1) {\n      next = i;\n    } else {\n      next = a + b;\n      a = b;\n      b = --------;\n    }\n    cout << next << \" \";\n  }\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 5, a = 0, b = 1, next;\n  for (int i = 0; i < n; ++i) {\n    if (i <= 1) {\n      next = i;\n    } else {\n      next = a + b;\n      a = b;\n      b = next;\n    }\n    cout << next << \" \";\n  }\n  return 0;\n}"
+      },
+      {
+        "id": 5,
+        "title": "Factorial Calculation",
+        "question": "Calculate the factorial of a number using a loop.\n\nInput: n=5\nOutput: 120\n\nInput: n=7\nOutput: 5040",
+        "code": "\nint main() {\n  int n = 5;\n  long long fact = 1;\n  for (int i = 1; i <= n; ++i) {\n    fact -------- i;\n  }\n  cout << fact;\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 5;\n  long long fact = 1;\n  for (int i = 1; i <= n; ++i) {\n    fact *= i;\n  }\n  cout << fact;\n  return 0;\n}"
+      },
+      {
+        "id": 6,
+        "title": "Palindrome Check",
+        "question": "Check if a number is a palindrome using a loop.\n\nInput: n=12321\nOutput: Palindrome\n\nInput: n=12345\nOutput: Not Palindrome",
+        "code": "\nint main() {\n  int n = 12321, rev = 0, temp = n;\n  while (temp != 0) {\n    rev = rev * 10 + temp ------- 10;\n    temp /= 10;\n  }\n  if (n == rev)\n    cout << \"Palindrome\";\n  else\n    cout << \"Not Palindrome\";\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 12321, rev = 0, temp = n;\n  while (temp != 0) {\n    rev = rev * 10 + temp % 10;\n    temp /= 10;\n  }\n  if (n == rev)\n    cout << \"Palindrome\";\n  else\n    cout << \"Not Palindrome\";\n  return 0;\n}"
+      },
+      {
+        "id": 7,
+        "title": "Armstrong Number Check",
+        "question": "Check if a number is an Armstrong number using a loop.\n\nInput: n=153\nOutput: Armstrong\n\nInput: n=123\nOutput: Not Armstrong",
+        "code": "\nint main() {\n  int n = 153, sum = 0, temp = n;\n  while (temp != 0) {\n    int digit = temp % 10;\n    sum ------- digit * digit * digit;\n    temp /= 10;\n  }\n  if (n == sum)\n    cout << \"Armstrong\";\n  else\n    cout << \"Not Armstrong\";\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 153, sum = 0, temp = n;\n  while (temp != 0) {\n    int digit = temp % 10;\n    sum += digit * digit * digit;\n    temp /= 10;\n  }\n  if (n == sum)\n    cout << \"Armstrong\";\n  else\n    cout << \"Not Armstrong\";\n  return 0;\n}"
+      },
+      {
+        "id": 8,
+        "title": "Count Digits",
+        "question": "Count the number of digits in a number using a loop.\n\nInput: n=12345\nOutput: 5\n\nInput: n=98765\nOutput: 5",
+        "code": "\nint main() {\n  int n = 12345, count = 0;\n  while (n ------ 0) {\n    n /= 10;\n    --------count;\n  }\n  cout << count;\n  return 0;\n}",
+        "correct_code": "\nint main() {\n  int n = 12345, count = 0;\n  while (n != 0) {\n    n /= 10;\n    ++count;\n  }\n  cout << count;\n  return 0;\n}"
+      }
+    ],
+
+    
+      "Array": [
+        {
+          "id": 1,
+          "title": "Find Missing Number",
+          "question": "Find the missing number from an array containing n distinct numbers taken from 0, 1, 2, ..., n.\n\nInput: arr=[3,0,1]\nOutput: 2\n\nInput: arr=[9,6,4,2,3,5,7,0,1]\nOutput: 8",
+          "code": "int missingNumber(vector<int>& nums) {\n  int n = nums.size();\n  int total = n ---- (n + 1) / 2;\n  for (int num : nums) {\n    total -= --------;\n  }\n  return total;\n}",
+          "correct_code": "int missingNumber(vector<int>& nums) {\n  int n = nums.size();\n  int total = n * (n + 1) / 2;\n  for (int num : nums) {\n    total -= num;\n  }\n  return total;\n}"
+        },
+        {
+          "id": 2,
+          "title": "Rotate Array",
+          "question": "Rotate an array to the right by k steps.\n\nInput: arr=[1,2,3,4,5,6,7], k=3\nOutput: [5,6,7,1,2,3,4]\n\nInput: arr=[-1,-100,3,99], k=2\nOutput: [3,99,-1,-100]",
+          "code": "void rotate(vector<int>& nums, int k) {\n  k = -------- % nums.size();\n  reverse(nums.begin(), nums.end());\n  reverse(nums.begin(), nums.------ + k);\n  reverse(nums.begin() + k, nums.end());\n}",
+          "correct_code": "void rotate(vector<int>& nums, int k) {\n  k = k % nums.size();\n  reverse(nums.begin(), nums.end());\n  reverse(nums.begin(), nums.begin() + k);\n  reverse(nums.begin() + k, nums.end());\n}"
+        },
+        {
+          "id": 3,
+          "title": "Find Duplicate Number",
+          "question": "Find the duplicate number in an array containing n+1 integers where each integer is between 1 and n (inclusive).\n\nInput: arr=[1,3,4,2,2]\nOutput: 2\n\nInput: arr=[3,1,3,4,2]\nOutput: 3",
+          "code": "int findDuplicate(vector<int>& nums) {\n  int slow = nums[0], fast = nums[0];\n  do {\n    slow = nums[slow];\n    fast = nums[nums[fast]];\n  } while (slow ----- fast);\n  slow = nums[0];\n  while (slow != fast) {\n    slow = nums[slow];\n    fast = nums[--------];\n  }\n  return slow;\n}",
+          "correct_code": "int findDuplicate(vector<int>& nums) {\n  int slow = nums[0], fast = nums[0];\n  do {\n    slow = nums[slow];\n    fast = nums[nums[fast]];\n  } while (slow != fast);\n  slow = nums[0];\n  while (slow != fast) {\n    slow = nums[slow];\n    fast = nums[fast];\n  }\n  return slow;\n}"
+        },
+        {
+          "id": 4,
+          "title": "Find Largest Element",
+          "question": "Find the largest element in an array.\n\nInput: arr=[3,2,1,5,6,4], k=2\nOutput: 5\n\nInput: arr=[3,2,3,1,2,4,5,5,6], k=4\nOutput: 4",
+          "code": "int findKthLargest(vector<int>& nums, int k) {\n  priority_queue<int, vector<int>, greater<int>> minHeap;\n  for (int num : nums) {\n    minHeap.push(-----);\n    if (minHeap.size() > k) {\n      --------.pop();\n    }\n  }\n  return minHeap.top();\n}",
+          "correct_code": "int findKthLargest(vector<int>& nums, int k) {\n  priority_queue<int, vector<int>, greater<int>> minHeap;\n  for (int num : nums) {\n    minHeap.push(num);\n    if (minHeap.size() > k) {\n      minHeap.pop();\n    }\n  }\n  return minHeap.top();\n}"
+        },
+        {
+          "id": 5,
+          "title": "Longest Consecutive Sequence",
+          "question": "Find the length of the longest consecutive sequence in an array.\n\nInput: arr=[100,4,200,1,3,2]\nOutput: 4\n\nInput: arr=[0,3,7,2,5,8,4,6,0,1]\nOutput: 9",
+          "code": "int longestConsecutive(vector<int>& nums) {\n  unordered_set<int> num_set(nums.begin(), nums.end());\n  int longest = 0;\n  for (int num : nums) {\n    if (----num_set.count(num - 1)) {\n      int current_num = num;\n      int current_streak = 1;\n      while (num_set.------(current_num + 1)) {\n        current_num += 1;\n        current_streak += 1;\n      }\n      longest = max(longest, --------);\n    }\n  }\n  return longest;\n}",
+          "correct_code": "int longestConsecutive(vector<int>& nums) {\n  unordered_set<int> num_set(nums.begin(), nums.end());\n  int longest = 0;\n  for (int num : nums) {\n    if (!num_set.count(num - 1)) {\n      int current_num = num;\n      int current_streak = 1;\n      while (num_set.count(current_num + 1)) {\n        current_num += 1;\n        current_streak += 1;\n      }\n      longest = max(longest, current_streak);\n    }\n  }\n  return longest;\n}"
+        },
+        {
+          "id": 6,
+          "title": "Merge Overlapping Intervals",
+          "question": "Merge overlapping intervals.\n\nInput: intervals=[[1,3],[2,6],[8,10],[15,18]]\nOutput: [[1,6],[8,10],[15,18]]\n\nInput: intervals=[[1,4],[4,5]]\nOutput: [[1,5]]",
+          "code": "vector<vector<int>> merge(vector<vector<int>>& intervals) {\n  if (intervals.empty()) return {};\n  sort(intervals.begin(), intervals.end());\n  vector<vector<int>> merged;\n  for (const ------& interval : intervals) {\n    if (merged.empty() || merged.back()[1] < interval[0])\n      merged.push_back(interval);\n    else\n      merged.back()[1] = max(merged.back()[1], interval[--------]);\n  }\n  return merged;\n}",
+          "correct_code": "vector<vector<int>> merge(vector<vector<int>>& intervals) {\n  if (intervals.empty()) return {};\n  sort(intervals.begin(), intervals.end());\n  vector<vector<int>> merged;\n  for (const auto& interval : intervals) {\n    if (merged.empty() || merged.back()[1] < interval[0])\n      merged.push_back(interval);\n    else\n      merged.back()[1] = max(merged.back()[1], interval[1]);\n  }\n  return merged;\n}"
+        },
+        {
+          "id": 7,
+          "title": "Find Majority Element",
+          "question": "Find the majority element (appears more than n/2 times).\n\nInput: arr=[3,2,3]\nOutput: 3\n\nInput: arr=[2,2,1,1,1,2,2]\nOutput: 2",
+          "code": "int majorityElement(vector<int>& nums) {\n  int count = 0, candidate = 0;\n  for (int num : nums) {\n    if (count == 0) {\n      candidate = num;\n    }\n    count += (num ------ candidate) ? -------- : -1;\n  }\n  return candidate;\n}",
+          "correct_code": "int majorityElement(vector<int>& nums) {\n  int count = 0, candidate = 0;\n  for (int num : nums) {\n    if (count == 0) {\n      candidate = num;\n    }\n    count += (num == candidate) ? 1 : -1;\n  }\n  return candidate;\n}"
+        },
+        {
+          "id": 8,
+          "title": "Find Unique Element",
+          "question": "Find the element that appears only once in an array where every other element appears twice.\n\nInput: arr=[2,2,1]\nOutput: 1\n\nInput: arr=[4,1,2,1,2]\nOutput: 4",
+          "code": "int singleNumber(vector<int>& nums) {\n  int result = 0;\n  for (int num : nums) {\n    result ^= --------;\n  }\n  return result;\n}",
+          "correct_code": "int singleNumber(vector<int>& nums) {\n  int result = 0;\n  for (int num : nums) {\n    result ^= num;\n  }\n  return result;\n}"
+        },
+        {
+          "id": 9,
+          "title": "Find Intersection of Arrays",
+          "question": "Find the intersection of two arrays.\n\nInput: arr1=[1,2,2,1], arr2=[2,2]\nOutput: [2,2]\n\nInput: arr1=[4,9,5], arr2=[9,4,9,8,4]\nOutput: [4,9]",
+          "code": "vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {\n  unordered_map<int, int> count;\n  for (int num : nums1) {\n    count[num]------;\n  }\n  vector<int> result;\n  for (int num : nums2) {\n    if (count[--------] > 0) {\n      result.push_back(num);\n      count[num]--;\n    }\n  }\n  return result;\n}",
+          "correct_code": "vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {\n  unordered_map<int, int> count;\n  for (int num : nums1) {\n    count[num]++;\n  }\n  vector<int> result;\n  for (int num : nums2) {\n    if (count[num] > 0) {\n      result.push_back(num);\n      count[num]--;\n    }\n  }\n  return result;\n}"
+        },
+        {
+          "id": 10,
+          "title": "Move Zeroes",
+          "question": "Move all zeroes in an array to the end while maintaining the relative order of the non-zero elements.\n\nInput: arr=[0,1,0,3,12]\nOutput: [1,3,12,0,0]\n\nInput: arr=[0,0,1]\nOutput: [1,0,0]",
+          "code": "void moveZeroes(vector<int>& nums) {\n  int lastNonZeroFoundAt = 0;\n  for (int i = 0; i < nums.size(); i++) {\n    if (nums[i] != --------) {\n      swap(nums[lastNonZeroFoundAt++], nums[i]);\n    }\n  }\n}",
+          "correct_code": "void moveZeroes(vector<int>& nums) {\n  int lastNonZeroFoundAt = 0;\n  for (int i = 0; i < nums.size(); i++) {\n    if (nums[i] != 0) {\n      swap(nums[lastNonZeroFoundAt++], nums[i]);\n    }\n  }\n}"
+        }
+      ],
+    
+
+    "String":[
+      {
+        "id": 1,
+        "title": "Reverse String",
+        "question": "Reverse a string in place.\n\nInput: s='hello'\nOutput: 'olleh'\n\nInput: s='Hannah'\nOutput: 'hannaH'",
+        "code": "class Solution {\npublic:\n  void reverseString(vector<char>& s) {\n    int left = 0, right = s.------- - 1;\n    while (left < right) {\n      ------(s[left++], s[right--]);\n    }\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  void reverseString(vector<char>& s) {\n    int left = 0, right = s.size() - 1;\n    while (left < right) {\n      swap(s[left++], s[right--]);\n    }\n  }\n}"
+      },
+      {
+        "id": 2,
+        "title": "First Unique Character",
+        "question": "Find the first non-repeating character in a string and return its index. If it doesn't exist, return -1.\n\nInput: s='leetcode'\nOutput: 0\n\nInput: s='loveleetcode'\nOutput: 2",
+        "code": "class Solution {\npublic:\n  int firstUniqChar(string s) {\n    vector<int> count(26, 0);\n    for (char c : ------) {\n      count[c - 'a']++;\n    }\n    for (int i = 0; i < s.size(); ++i) {\n      if (count[s[i] - --------] == 1) {\n        return i;\n      }\n    }\n    return -1;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  int firstUniqChar(string s) {\n    vector<int> count(26, 0);\n    for (char c : s) {\n      count[c - 'a']++;\n    }\n    for (int i = 0; i < s.size(); ++i) {\n      if (count[s[i] - 'a'] == 1) {\n        return i;\n      }\n    }\n    return -1;\n  }\n}"
+      },
+      {
+        "id": 3,
+        "title": "Valid Anagram",
+        "question": "Determine if two strings are anagrams of each other.\n\nInput: s='anagram', t='nagaram'\nOutput: true\n\nInput: s='rat', t='car'\nOutput: false",
+        "code": "class Solution {\npublic:\n  bool isAnagram(string s, string t) {\n    if (s.size() != ---------) return false;\n    vector<int> count(26, 0);\n    for (char c : s) {\n      count[c - 'a']++;\n    }\n    for (char c : t) {\n      if (--count[c - 'a'] < 0) {\n        return ---------;\n      }\n    }\n    return true;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  bool isAnagram(string s, string t) {\n    if (s.size() != t.size()) return false;\n    vector<int> count(26, 0);\n    for (char c : s) {\n      count[c - 'a']++;\n    }\n    for (char c : t) {\n      if (--count[c - 'a'] < 0) {\n        return false;\n      }\n    }\n    return true;\n  }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Longest Substring Without Repeating Characters",
+        "question": "Find the length of the longest substring without repeating characters.\n\nInput: s='abcabcbb'\nOutput: 3\n\nInput: s='bbbbb'\nOutput: 1",
+        "code": "class Solution {\npublic:\n  int lengthOfLongestSubstring(string s) {\n    vector<int> index(-------, -1);\n    int maxLength = 0, start = -1;\n    for (int i = 0; i < s.size(); ++i) {\n      if (index[s[i]] > start) {\n        start = index[-------];\n      }\n      index[s[i]] = i;\n      maxLength = max(maxLength, i - start);\n    }\n    return maxLength;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  int lengthOfLongestSubstring(string s) {\n    vector<int> index(256, -1);\n    int maxLength = 0, start = -1;\n    for (int i = 0; i < s.size(); ++i) {\n      if (index[s[i]] > start) {\n        start = index[s[i]];\n      }\n      index[s[i]] = i;\n      maxLength = max(maxLength, i - start);\n    }\n    return maxLength;\n  }\n}"
+      },
+      {
+        "id": 5,
+        "title": "Palindrome Check",
+        "question": "Check if a given string is a palindrome, considering only alphanumeric characters and ignoring cases.\n\nInput: s='A man, a plan, a canal: Panama'\nOutput: true\n\nInput: s='race a car'\nOutput: false",
+        "code": "class Solution {\npublic:\n  bool isPalindrome(string s) {\n    int left = 0, right = s.size() - 1;\n    while (left < right) {\n      if (!isalnum(---------)) left++;\n      else if (!isalnum(s[right])) right--;\n      else if (tolower(s[left++]) -------- tolower(s[right--])) return false;\n    }\n    return true;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  bool isPalindrome(string s) {\n    int left = 0, right = s.size() - 1;\n    while (left < right) {\n      if (!isalnum(s[left])) left++;\n      else if (!isalnum(s[right])) right--;\n      else if (tolower(s[left++]) != tolower(s[right--])) return false;\n    }\n    return true;\n  }\n}"
+      },
+      {
+        "id": 6,
+        "title": "Count and Say",
+        "question": "Given an integer n, generate the nth term of the count-and-say sequence.\n\nInput: n=4\nOutput: '1211'\n\nInput: n=5\nOutput: '111221'",
+        "code": "class Solution {\npublic:\n  string countAndSay(int n) {\n    if (n == 1) return \"1\";\n    string s = countAndSay(-------);\n    string result = \"\";\n    for (int i = 0; i < s.size(); i++) {\n      int count = 1;\n      while (i + 1 < s.size() && s[i] == s[i + 1]) {\n        i++;\n        count++;\n      }\n      result += to_string(--------) + s[i];\n    }\n    return result;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  string countAndSay(int n) {\n    if (n == 1) return \"1\";\n    string s = countAndSay(n - 1);\n    string result = \"\";\n    for (int i = 0; i < s.size(); i++) {\n      int count = 1;\n      while (i + 1 < s.size() && s[i] == s[i + 1]) {\n        i++;\n        count++;\n      }\n      result += to_string(count) + s[i];\n    }\n    return result;\n  }\n}"
+      },
+      {
+        "id": 7,
+        "title": "String to Integer (atoi)",
+        "question": "Implement the atoi function, which converts a string to an integer.\n\nInput: s='42'\nOutput: 42\n\nInput: s='-42'\nOutput: -42",
+        "code": "class Solution {\npublic:\n  int myAtoi(string s) {\n    int i = 0, sign = 1, result = 0;\n    while (i < s.size() && isspace(s[i])) i++;\n    if (i < s.size() && (s[i] == '-' || s[i] == '+')) {\n      sign = (s[i++] == '-') ? -1 : 1;\n    }\n    while (i < s.size() && isdigit(s[i])) {\n      if (result > INT_MAX / 10 || (result == INT_MAX / 10 && s[i] - '0' > 7)) {\n        return (sign == 1) ? INT_MAX : INT_MIN;\n      }\n      result = result * 10 + (s[i++] - '0');\n    }\n    return result * sign;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  int myAtoi(string s) {\n    int i = 0, sign = 1, result = 0;\n    while (i < s.size() && isspace(s[i])) i++;\n    if (i < s.size() && (s[i] == '-' || s[i] == '+')) {\n      sign = (s[i++] == '-') ? -1 : 1;\n    }\n    while (i < s.size() && isdigit(s[i])) {\n      if (result > INT_MAX / 10 || (result == INT_MAX / 10 && s[i] - '0' > 7)) {\n        return (sign == 1) ? INT_MAX : INT_MIN;\n      }\n      result = result * 10 + (s[i++] - '0');\n    }\n    return result * sign;\n  }\n}"
+      },
+      {
+        "id": 8,
+        "title": "Implement strStr()",
+        "question": "Implement the strStr() function, which finds the first occurrence of a substring.\n\nInput: haystack='hello', needle='ll'\nOutput: 2\n\nInput: haystack='aaaaa', needle='bba'\nOutput: -1",
+        "code": "class Solution {\npublic:\n  int strStr(string haystack, string needle) {\n    if (needle.empty()) return 0;\n    for (int i = 0; i <= haystack.size() - needle.size(); i++) {\n      int j = 0;\n      for (; j < needle.size(); j++) {\n        if (haystack[-------] != needle[j]) break;\n      }\n      if (j == needle.size()) return -------;\n    }\n    return -1;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  int strStr(string haystack, string needle) {\n    if (needle.empty()) return 0;\n    for (int i = 0; i <= haystack.size() - needle.size(); i++) {\n      int j = 0;\n      for (; j < needle.size(); j++) {\n        if (haystack[i + j] != needle[j]) break;\n      }\n      if (j == needle.size()) return i;\n    }\n    return -1;\n  }\n}"
+      },
+      {
+        "id": 9,
+        "title": "Longest Common Prefix",
+        "question": "Write a function to find the longest common prefix string amongst an array of strings.\n\nInput: strs=['flower','flow','flight']\nOutput: 'fl'\n\nInput: strs=['dog','racecar','car']\nOutput: ''",
+        "code": "class Solution {\npublic:\n  string longestCommonPrefix(vector<string>& strs) {\n    if (strs.empty()) return \"\";\n    for (int i = 0; i ------ strs[0].size(); i++) {\n      char c = strs[0][i];\n      for (int j = 1; j < strs.size(); j++) {\n        if (i == strs[j].size() ------ strs[j][i] != c) return strs[0].substr(0, i);\n      }\n    }\n    return strs[0];\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  string longestCommonPrefix(vector<string>& strs) {\n    if (strs.empty()) return \"\";\n    for (int i = 0; i < strs[0].size(); i++) {\n      char c = strs[0][i];\n      for (int j = 1; j < strs.size(); j++) {\n        if (i == strs[j].size() || strs[j][i] != c) return strs[0].substr(0, i);\n      }\n    }\n    return strs[0];\n  }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Valid Parentheses",
+        "question": "Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.\n\nInput: s='()'\nOutput: true\n\nInput: s='()[]{}'\nOutput: true",
+        "code": "class Solution {\npublic:\n  bool isValid(string s) {\n    stack<char> st;\n    for (char c : s) {\n      if (c == '(' || c == '{' || c == '[') {\n        st.push(c);\n      } else {\n        if (st.empty()) return false;\n        char top = st.-------;\n        st.pop();\n        if ((c == ')' && top != '(') || (c == '}' && top != '{') || (c == ']' && top != '[')) {\n          return -------;\n        }\n      }\n    }\n    return st.empty();\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  bool isValid(string s) {\n    stack<char> st;\n    for (char c : s) {\n      if (c == '(' || c == '{' || c == '[') {\n        st.push(c);\n      } else {\n        if (st.empty()) return false;\n        char top = st.top();\n        st.pop();\n        if ((c == ')' && top != '(') || (c == '}' && top != '{') || (c == ']' && top != '[')) {\n          return false;\n        }\n      }\n    }\n    return st.empty();\n  }\n}"
+      }
+    ],
+
+    "Tree":[
+      {
+        "id": 1,
+        "title": "Invert Binary Tree",
+        "question": "Invert a binary tree.\n\nInput: root=[4,2,7,1,3,6,9]\nOutput: [4,7,2,9,6,3,1]",
+        "code": "class Solution {\npublic:\n  TreeNode* invertTree(TreeNode* root) {\n    if (!root) return nullptr;\n    TreeNode* left = invertTree(root->left);\n    TreeNode* right = invertTree(root->right);\n    root->------ = right;\n    root->right = left;\n    return -------;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  TreeNode* invertTree(TreeNode* root) {\n    if (!root) return nullptr;\n    TreeNode* left = invertTree(root->left);\n    TreeNode* right = invertTree(root->right);\n    root->left = right;\n    root->right = left;\n    return root;\n  }\n}"
+      },
+      {
+        "id": 2,
+        "title": "Maximum Depth of Binary Tree",
+        "question": "Given a binary tree, find its maximum depth.\n\nInput: root=[3,9,20,null,null,15,7]\nOutput: 3",
+        "code": "class Solution {\npublic:\n  int maxDepth(TreeNode* root) {\n    if (!root) return 0;\n    return ------- + max(maxDepth(root->left), maxDepth(root->right));\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  int maxDepth(TreeNode* root) {\n    if (!root) return 0;\n    return 1 + max(maxDepth(root->left), maxDepth(root->right));\n  }\n}"
+      },
+      {
+        "id": 3,
+        "title": "Same Tree",
+        "question": "Given two binary trees, write a function to check if they are the same or not.\n\nInput: p=[1,2,3], q=[1,2,3]\nOutput: true\n\nInput: p=[1,2], q=[1,null,2]\nOutput: false",
+        "code": "class Solution {\npublic:\n  bool isSameTree(TreeNode* p, TreeNode* q) {\n    if (!p ------ !q) return true;\n    if (!p || !q) return false;\n    return p->val == q->val && isSameTree(p->left, q->left) -------- isSameTree(p->right, q->right);\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  bool isSameTree(TreeNode* p, TreeNode* q) {\n    if (!p && !q) return true;\n    if (!p || !q) return false;\n    return p->val == q->val && isSameTree(p->left, q->left) && isSameTree(p->right, q->right);\n  }\n}"
+      },
+      {
+        "id": 4,
+        "title": "Symmetric Tree",
+        "question": "Check whether a binary tree is symmetric around its center.\n\nInput: root=[1,2,2,3,4,4,3]\nOutput: true\n\nInput: root=[1,2,2,null,3,null,3]\nOutput: false",
+        "code": "class Solution {\npublic:\n  bool isSymmetric(TreeNode* root) {\n    return isMirror(root, root);\n  }\nprivate:\n  bool isMirror(TreeNode* t1, TreeNode* t2) {\n    if (!t1 && !t2) return true;\n    if (!t1 ------ !t2) return false;\n    return (t1->val ------- t2->val) && isMirror(t1->right, t2->left) && isMirror(t1->left, t2->right);\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  bool isSymmetric(TreeNode* root) {\n    return isMirror(root, root);\n  }\nprivate:\n  bool isMirror(TreeNode* t1, TreeNode* t2) {\n    if (!t1 && !t2) return true;\n    if (!t1 || !t2) return false;\n    return (t1->val == t2->val) && isMirror(t1->right, t2->left) && isMirror(t1->left, t2->right);\n  }\n}"
+      },
+      {
+        "id": 5,
+        "title": "Binary Tree Level Order Traversal",
+        "question": "Given a binary tree, return the level order traversal of its nodes' values.\n\nInput: root=[3,9,20,null,null,15,7]\nOutput: [[3],[9,20],[15,7]]",
+        "code": "class Solution {\npublic:\n  vector<vector<int>> levelOrder(TreeNode* root) {\n    vector<vector<int>> result;\n    if (!root) return result;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (-----------) {\n      int size = q.size();\n      vector<int> level;\n      for (int i = 0; i < size; i++) {\n        TreeNode* node = q.front(); q.pop();\n        level.push_back(node->val);\n        if (node->left) q.push(node->left);\n        if (node->right) q.push(node->right);\n      }\n      result.push_back(---------);\n    }\n    return result;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  vector<vector<int>> levelOrder(TreeNode* root) {\n    vector<vector<int>> result;\n    if (!root) return result;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (!q.empty()) {\n      int size = q.size();\n      vector<int> level;\n      for (int i = 0; i < size; i++) {\n        TreeNode* node = q.front(); q.pop();\n        level.push_back(node->val);\n        if (node->left) q.push(node->left);\n        if (node->right) q.push(node->right);\n      }\n      result.push_back(level);\n    }\n    return result;\n  }\n}"
+      },
+      {
+        "id": 6,
+        "title": "Binary Tree Zigzag Level Order Traversal",
+        "question": "Given a binary tree, return the zigzag level order traversal of its nodes' values.\n\nInput: root=[3,9,20,null,null,15,7]\nOutput: [[3],[20,9],[15,7]]",
+        "code": "class Solution {\npublic:\n  vector<vector<int>> zigzagLevelOrder(TreeNode* root) {\n    vector<vector<int>> result;\n    if (!root) return result;\n    queue<-------------> q;\n    q.push(root);\n    bool leftToRight = true;\n    while (!q.empty()) {\n      int size = q.size();\n      vector<int> level(-----------);\n      for (int i = 0; i < size; i++) {\n        TreeNode* node = q.front(); q.pop();\n        int index = leftToRight ? ------- : size - 1 - i;\n        level[index] = node->val;\n        if (node->left) q.push(node->left);\n        if (node->right) q.push(node->right);\n      }\n      leftToRight = !leftToRight;\n      result.push_back(level);\n    }\n    return result;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  vector<vector<int>> zigzagLevelOrder(TreeNode* root) {\n    vector<vector<int>> result;\n    if (!root) return result;\n    queue<TreeNode*> q;\n    q.push(root);\n    bool leftToRight = true;\n    while (!q.empty()) {\n      int size = q.size();\n      vector<int> level(size);\n      for (int i = 0; i < size; i++) {\n        TreeNode* node = q.front(); q.pop();\n        int index = leftToRight ? i : size - 1 - i;\n        level[index] = node->val;\n        if (node->left) q.push(node->left);\n        if (node->right) q.push(node->right);\n      }\n      leftToRight = !leftToRight;\n      result.push_back(level);\n    }\n    return result;\n  }\n}"
+      },
+      {
+        "id": 7,
+        "title": "Binary Tree Right Side View",
+        "question": "Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.\n\nInput: root=[1,2,3,null,5,null,4]\nOutput: [1,3,4]",
+        "code": "class Solution {\npublic:\n  vector<int> rightSideView(TreeNode* root) {\n    vector<int> result;\n    if (!root) return result;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (!q.empty()) {\n      int size = q.size();\n      for (int i = 0; i < size; i++) {\n        TreeNode* node = q.----------; q.pop();\n        if (i == size - 1) result.push_back(node->----------);\n        if (node->left) q.push(node->left);\n        if (node->right) q.push(node->right);\n      }\n    }\n    return result;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  vector<int> rightSideView(TreeNode* root) {\n    vector<int> result;\n    if (!root) return result;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (!q.empty()) {\n      int size = q.size();\n      for (int i = 0; i < size; i++) {\n        TreeNode* node = q.front(); q.pop();\n        if (i == size - 1) result.push_back(node->val);\n        if (node->left) q.push(node->left);\n        if (node->right) q.push(node->right);\n      }\n    }\n    return result;\n  }\n}"
+      },
+      {
+        "id": 8,
+        "title": "Convert Sorted Array to Binary Search Tree",
+        "question": "Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.\n\nInput: nums=[-10,-3,0,5,9]\nOutput: [0,-3,9,-10,null,5]",
+        "code": "class Solution {\npublic:\n  TreeNode* sortedArrayToBST(vector<int>& nums) {\n    return helper(---------, 0, nums.size() - 1);\n  }\nprivate:\n  TreeNode* helper(vector<int>& nums, int left, int right) {\n    if (left > right) return nullptr;\n    int mid = left + (right - left) / 2;\n    TreeNode* root = new TreeNode(nums[mid]);\n    root->left = helper(nums, left, mid - ---------);\n    root->right = helper(nums, mid + 1, right);\n    return root;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  TreeNode* sortedArrayToBST(vector<int>& nums) {\n    return helper(nums, 0, nums.size() - 1);\n  }\nprivate:\n  TreeNode* helper(vector<int>& nums, int left, int right) {\n    if (left > right) return nullptr;\n    int mid = left + (right - left) / 2;\n    TreeNode* root = new TreeNode(nums[mid]);\n    root->left = helper(nums, left, mid - 1);\n    root->right = helper(nums, mid + 1, right);\n    return root;\n  }\n}"
+      },
+      {
+        "id": 9,
+        "title": "Binary Tree Paths",
+        "question": "Given a binary tree, return all root-to-leaf paths.\n\nInput: root=[1,2,3,null,5]\nOutput: ['1->2->5', '1->3']",
+        "code": "class Solution {\npublic:\n  vector<string> binaryTreePaths(TreeNode* root) {\n    vector<string> paths;\n    if (-------) dfs(root, \"\", paths);\n    return paths;\n  }\nprivate:\n  void dfs(TreeNode* root, string path, vector<string>& paths) {\n    if (!root->left && !root->right) paths.push_back(path + to_string(root->val));\n    if (root->left) dfs(root->left, path + to_string(root->val) + \"->\", paths);\n    if (root->right) dfs(root->right, path + to_string(root->val) + \"->\", paths);\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  vector<string> binaryTreePaths(TreeNode* root) {\n    vector<string> paths;\n    if (root) dfs(root, \"\", paths);\n    return paths;\n  }\nprivate:\n  void dfs(TreeNode* root, string path, vector<string>& paths) {\n    if (!root->left && !root->right) paths.push_back(path + to_string(root->val));\n    if (root->left) dfs(root->left, path -------- to_string(root->val) + \"->\", paths);\n    if (root->right) dfs(root->right, path + to_string(root->val) + \"->\", paths);\n  }\n}"
+      },
+      {
+        "id": 10,
+        "title": "Lowest Common Ancestor of a Binary Search Tree",
+        "question": "Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.\n\nInput: root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8\nOutput: 6",
+        "code": "class Solution {\npublic:\n  TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {\n    if (--------) return nullptr;\n    if (p->val < root->val && q->val < root->val) return lowestCommonAncestor(root->left, p, q);\n    if (p->val > root->val && q->val ------- root->val) return lowestCommonAncestor(root->right, p, q);\n    return root;\n  }\n}",
+        "correct_code": "class Solution {\npublic:\n  TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {\n    if (!root) return nullptr;\n    if (p->val < root->val && q->val < root->val) return lowestCommonAncestor(root->left, p, q);\n    if (p->val > root->val && q->val > root->val) return lowestCommonAncestor(root->right, p, q);\n    return root;\n  }\n}"
+      }
+    ],
+    
+    
+    
+
+
+
+    "DynamicProg": [
+        {
+            "id": 1,
+            "title": "Reverse a String", 
+            "question": "You are given an integer array <code>nums</code>. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.</p>\n<p>Return <code>true</code> if you can reach the last index, or <code>false</code> otherwise.</p>\n\n<p><strong>Example 1:</strong></p>\n<p>Input: nums = [2,3,1,1,4]<br>Output: true<br>Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.</p>\n\n<p><strong>Example 2:</strong></p>\n<p>Input: nums = [3,2,1,0,4]<br>Output: false<br>Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.</p>",
+            "code": "bool canJump(std::vector<int>& nums) { int maxReach = 0;\n for (int i = 0; i < nums.size(); i++) {\n if (i > maxReach) return false;\n maxReach = std::max(--------, i + nums[i]);\n }\n return true;\n }",
+            "correct_code": "bool canJump(std::vector<int>& nums) { int maxReach = 0;\n for (int i = 0; i < nums.size(); i++) {\n if (i > maxReach) return false;\n maxReach = std::max(maxReach, i + nums[i]);\n }\n return true;\n }"
+            
+        
+          },
+          {
+            "id": 2,
+            "title": "Longest Palindromic Substring",
+            "question": "Given a string s, return the longest palindromic substring in s.\n\nExample 1:\n\nInput: s = \"babad\"\nOutput: \"bab\"\nExplanation: \"aba\" is also a valid answer.\nExample 2:\n\nInput: s = \"cbbd\"\nOutput: \"bb\"",
+            "code": "class Solution {\npublic:\n    string longestPalindrome(string s) {\n        int n = s.length();\n        if (n == 0) return \"\";\n\n        vector<vector<bool>> dp(n, vector<bool>(n, --------));\n        int start = 0, maxLength = 1;\n        for (int i = 0; i < n; ++i) {\n            dp[i][i] = true;\n        }\n\n        for (int len = 2; len <= n; ++len) {\n            for (int i = 0; i < n - len + 1; ++i) {\n                int j = i + len - 1;\n                if (s[i] == s[j] && (len == 2 -------- dp[i + 1][j - 1])) {\n                    dp[i][j] = true;\n                    if (len > maxLength) {\n                        start = i;\n                        maxLength = len;\n                    }\n                }\n            }\n        }\n\n        return s.substr(start, maxLength);\n    }\n};",
+            "correct_code": "class Solution {\npublic:\n    string longestPalindrome(string s) {\n        int n = s.length();\n        if (n == 0) return \"\";\n\n        vector<vector<bool>> dp(n, vector<bool>(n, false));\n        int start = 0, maxLength = 1;\n        for (int i = 0; i < n; ++i) {\n            dp[i][i] = true;\n        }\n\n        for (int len = 2; len <= n; ++len) {\n            for (int i = 0; i < n - len + 1; ++i) {\n                int j = i + len - 1;\n                if (s[i] == s[j] && (len == 2 || dp[i + 1][j - 1])) {\n                    dp[i][j] = true;\n                    if (len > maxLength) {\n                        start = i;\n                        maxLength = len;\n                    }\n                }\n            }\n        }\n\n        return s.substr(start, maxLength);\n    }\n};"
+          },
+          {
+            "id": 3,
+            "title": "Generate Parentheses",
+            "question": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\n\nExample 1:\n\nInput: n = 3\nOutput: [\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\nExample 2:\n\nInput: n = 1\nOutput: [\"()\"]",
+            "code": "class Solution {\npublic:\n    void generateParentheses(int open, int close, string current, vector<string>& result){\n        if(open == 0 && close== 0){\n            result.push_back(---------);\n            return;\n        }\n        if(open>0){\n            generateParentheses(open-1, close, current + '----------' , result);\n        }\n        if(close > open){\n            generateParentheses(open, close -1 , current +')', result);\n        }\n    }\n\n    vector<string> generateParenthesis(int n) {\n        vector<string> result;\n        generateParentheses(n,n,\"\",result);\n        return result;\n    }\n};"
+        
+            ,"correct_code": "class Solution {\npublic:\n    void generateParentheses(int open, int close, string current, vector<string>& result){\n        if(open == 0 && close== 0){\n            result.push_back(current);\n            return;\n        }\n        if(open>0){\n            generateParentheses(open-1, close, current + '(' , result);\n        }\n        if(close > open){\n            generateParentheses(open, close -1 , current +')', result);\n        }\n    }\n\n    vector<string> generateParenthesis(int n) {\n        vector<string> result;\n        generateParentheses(n,n,\"\",result);\n        return result;\n    }\n};"
+        
+          },
+        {
+            "id": 4,
+            "title": "Maximum Subarray",
+            "question": "Given an integer array nums, find the subarray with the largest sum, and return its sum.\n\nExample 1:\n\nInput: nums = [-2,1,-3,4,-1,2,1,-5,4]\nOutput: 6\nExplanation: The subarray [4,-1,2,1] has the largest sum 6.\nExample 2:\n\nInput: nums = [1]\nOutput: 1\nExplanation: The subarray [1] has the largest sum 1.\nExample 3:\n\nInput: nums = [5,4,-1,7,8]\nOutput: 23\nExplanation: The subarray [5,4,-1,7,8] has the largest sum 23.",
+            "code": "class Solution {\npublic:\n    int maxSubArray(vector<int>& nums) {\n\n        int currentSum= nums[0];\n        int maxSum= nums[0];\n\n        for(int i=1; i<nums.size();++i){\n             currentSum= max(----------,currentSum + nums[i]);\n             maxSum= max(maxSum, currentSum);\n\n        }\n        return maxSum;\n    }\n};"
+            ,"correct_code": "class Solution {\npublic:\n    int maxSubArray(vector<int>& nums) {\n\n        int currentSum= nums[0];\n        int maxSum= nums[0];\n\n        for(int i=1; i<nums.size();++i){\n             currentSum= max(nums[i],currentSum + nums[i]);\n             maxSum= max(maxSum, currentSum);\n\n        }\n        return maxSum;\n    }\n};"
+        
+          },
+        {
+            "id": 5,
+            "title": "Jump  Game",
+            "question": "You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.\n\nReturn true if you can reach the last index, or false otherwise.\n\nExample 1:\n\nInput: nums = [2,3,1,1,4]\nOutput: true\nExplanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.\nExample 2:\n\nInput: nums = [3,2,1,0,4]\nOutput: false\nExplanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.",
+            "code": "class Solution {\npublic:\n    bool canJump(vector<int>& nums) {\n        int n = nums.size();\n        if(n == 1) return true;\n\n        int maxReach = 0;\n        for (int i=0; i<n ; i++){\n            if(maxReach < i) return false;\n            maxReach = max(maxReach, i + ----------);\n            if(maxReach >= n - 1) return true;\n        }\n        return ---------;\n    }\n};"
+          ,"correct_code": "class Solution {\npublic:\n    bool canJump(vector<int>& nums) {\n        int n = nums.size();\n        if(n == 1) return true;\n\n        int maxReach = 0;\n        for (int i=0; i<n ; i++){\n            if(maxReach < i) return false;\n            maxReach = max(maxReach, i + nums[i]);\n            if(maxReach >= n - 1) return true;\n        }\n        return false;\n    }\n};"
+        
+          },
+        {
+            "id": 6,
+            "title": "Unique Paths",
+            "question": "There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.\n\nGiven the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.\n\nThe test cases are generated so that the answer will be less than or equal to 2 * 10^9.\n\nExample 1:\n\nInput: m = 3, n = 7\nOutput: 28\nExample 2:\n\nInput: m = 3, n = 2\nOutput: 3\nExplanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -> Down -> Down\n2. Down -> Down -> Right\n3. Down -> Right -> Down",
+            "code": "class Solution {\npublic:\n    int uniquePaths(int m, int n) {\n        vector<vector<int>> dp(m, vector<int>(n, 1));\n        for(int i = 1; i < m; ++i) {\n            for(int j = 1; j < n; ++j) {\n                dp[i][j] = dp[i - 1][j] + dp[i][j - 1];\n            }\n        }\n        return dp[m - 1][n - 1];\n    }\n};"
+        
+            ,"correct_code": "class Solution {\npublic:\n    int uniquePaths(int m, int n) {\n        vector<vector<int>> dp(m, vector<int>(n, 1));\n        for(int i = 1; i < m; ++i) {\n            for(int j = 1; j < n; ++j) {\n                dp[i][j] = dp[i - 1][--------] + dp[----------][j - 1];\n            }\n        }\n        return dp[m - 1][n - 1];\n    }\n};"
+        
+          },
+        {
+            "id": 7,
+            "title": "Unique Paths II",
+            "question": "You are given an m x n integer array grid. There is a robot initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.\n\nAn obstacle and space are marked as 1 or 0 respectively in grid. A path that the robot takes cannot include any square that is an obstacle.\n\nReturn the number of possible unique paths that the robot can take to reach the bottom-right corner.\n\nThe testcases are generated so that the answer will be less than or equal to 2 * 10^9.\n\nExample 1:\n\nInput: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]\nOutput: 2\nExplanation: There is one obstacle in the middle of the 3x3 grid above.\nThere are two ways to reach the bottom-right corner:\n1. Right -> Right -> Down -> Down\n2. Down -> Down -> Right -> Right\nExample 2:\n\nInput: obstacleGrid = [[0,1],[0,0]]\nOutput: 1",
+            "code": "class Solution {\npublic:\n    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {\n        int m = obstacleGrid.size();\n        int n = obstacleGrid[0].size();\n\n        vector<vector<long long>> dp(m, vector<long long>(n, 0));\n\n        for(int i = 0; i < m; ++i) {\n            for(int j = 0; j < n; ++j) {\n                if(obstacleGrid[i][j] == 1) {\n                    dp[i][j] = 0;\n                } else if(i == 0 -------- j == 0) {\n                    dp[i][j] = 1;\n                } else {\n                    dp[i][j] = (i > 0 ? dp[i - 1][j] : 0) + (j > 0 ? dp[---------][j - 1] : 0);\n                }\n            }\n        }\n        return dp[m - 1][n - 1];\n    }\n};"
+        
+            ,"correct_code": "class Solution {\npublic:\n    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {\n        int m = obstacleGrid.size();\n        int n = obstacleGrid[0].size();\n\n        vector<vector<long long>> dp(m, vector<long long>(n, 0));\n\n        for(int i = 0; i < m; ++i) {\n            for(int j = 0; j < n; ++j) {\n                if(obstacleGrid[i][j] == 1) {\n                    dp[i][j] = 0;\n                } else if(i == 0 && j == 0) {\n                    dp[i][j] = 1;\n                } else {\n                    dp[i][j] = (i > 0 ? dp[i - 1][j] : 0) + (j > 0 ? dp[i][j - 1] : 0);\n                }\n            }\n        }\n        return dp[m - 1][n - 1];\n    }\n};"
+        
+          },
+        {
+            "id": 8,
+            "title": "Minimum Path Sum",
+            "question": "Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.\n\nNote: You can only move either down or right at any point in time.\n\nExample 1:\n\nInput: grid = [[1,3,1],[1,5,1],[4,2,1]]\nOutput: 7\nExplanation: Because the path 1 → 3 → 1 → 1 → 1 minimizes the sum.\nExample 2:\n\nInput: grid = [[1,2,3],[4,5,6]]\nOutput: 12",
+            "code": "class Solution {\npublic:\n    int minPathSum(vector<vector<int>>& grid) {\n        int m = grid.size();\n        int n = grid[0].size();\n\n        vector<vector<int>> dp(m, vector<int>(n, 0));\n\n        dp[0][0] = grid[0][0]; // Initialize the value at the starting cell.\n\n        // Initialize the values in the first row.\n        for(int j = 1; j < n; ++j) {\n            dp[0][j] = dp[0][j - 1] + grid[0][j];\n        }\n\n        // Initialize the values in the first column.\n        for(int i = 1; i < m; ++i) {\n            dp[i][0] = dp[i - 1][0] + grid[i][0];\n        }\n\n        // Fill in the rest of the dp table.\n        for(int i = 1; i < m; ++i) {\n            for(int j = 1; j < n; ++j) {\n                dp[i][j] = --------(dp[i - 1][j], dp[i][j - 1]) + grid[i][--------];\n            }\n        }\n\n        return dp[m - 1][n - 1];\n    }\n};"
+        
+            ,"correct_code": "class Solution {\npublic:\n    int minPathSum(vector<vector<int>>& grid) {\n        int m = grid.size();\n        int n = grid[0].size();\n\n        vector<vector<int>> dp(m, vector<int>(n, 0));\n\n        dp[0][0] = grid[0][0]; // Initialize the value at the starting cell.\n\n        // Initialize the values in the first row.\n        for(int j = 1; j < n; ++j) {\n            dp[0][j] = dp[0][j - 1] + grid[0][j];\n        }\n\n        // Initialize the values in the first column.\n        for(int i = 1; i < m; ++i) {\n            dp[i][0] = dp[i - 1][0] + grid[i][0];\n        }\n\n        // Fill in the rest of the dp table.\n        for(int i = 1; i < m; ++i) {\n            for(int j = 1; j < n; ++j) {\n                dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j];\n            }\n        }\n\n        return dp[m - 1][n - 1];\n    }\n};"
+        
+          }
+        
+        
+          
+          
+    ],
+    "Contest":[
+    {
+        "id": 1,
+        "title": "Print 'Hello, World!'",
+        "question": "Write a C++ program to print 'Hello, World!'.",
+        "code": "#include <iostream>\nint main() {\n    std::cout << \"--------\" << std::endl;\n    return 0;\n}"
+    
+        ,"correct_code": "#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
+    
+      },
+    {
+      "id":2 ,
+      "title": "Swap Two Variables",
+      "question": "Swap two numbers without using a third variable.\n\n Input: x=10, y=70\n Output: x=70, y=10",
+      "code": "int main()\n{\n   int x = 10;\n   int y = 70;\n\n   x = x ----- y;\n   y = x - y;\n   x = x ----- y;\n\n   cout << \"X : \" << x << \"\\n\";\n   cout << \"Y : \" << y << \"\\n\";\n   \n   return 0;\n}",
+      "correct_code": "int main()\n{\n   int x = 10;\n   int y = 70;\n\n   x = x + y;\n   y = x - y;\n   x = x - y;\n\n   cout << \"X : \" << x << \"\\n\";\n   cout << \"Y : \" << y << \"\\n\";\n   \n   return 0;\n}"
+  
+      },
+    {
+      "id": 3,
+      "title": "Sum of Two Numbers Without Negative Sign",
+      "question": "Calculate the sum of two numbers without using the negative sign.\n\n Input: a=5, b=5\n Output: sum=10",
+      "code": "\nint main()\n{\n  int a = 5;\n  int b = 5;\n  int sum = ----( -a ---- b );\n  cout << sum;\n  return 0;\n}",
+      "correct_code": "\nint main()\n{\n  int a = 5;\n  int b = 5;\n  int sum = -( -a - b );\n  cout << sum;\n  return 0;\n}"
+  
+      }
+    ]
+    
+    
+    
+  }
+  
