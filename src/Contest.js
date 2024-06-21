@@ -25,7 +25,7 @@ const Contest = () => {
 
  
   const [msg2,setMsg2]  = useState('');
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
   const [questionData, setQuestionData] = useState(questionsData);
   const [currentTopic, setCurrentTopic] = useState(questionsData.Contest);
   const [id, setId] = useState(0);
@@ -199,17 +199,7 @@ setMsg2("send nahi hua");
     close.style.display='none';
   };
 
-  const handleCategory = (category) => {
-    setCurrentTopic(questionData[category]);
-  /*  setCurrentQuestion(questionData[category][0]);*/
-    const nav = document.getElementById('nav');
-    nav.style.display = "block";
-    const close =document.getElementById('close');
-    close.style.display='block';
-    const tick = document.getElementById('tick-con');
-
-      tick.style.display = "none";
-  };
+ 
 
   const handleListQues = (index) => {
     setId(index);
