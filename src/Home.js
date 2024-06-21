@@ -14,18 +14,15 @@ import logo from './images/Adicshan_Logo.png';
 import list from './images/list.png';
 import close from './images/close.png';
 import tick from './images/tick.gif';
-import c1 from './images/c++1.png';
-import c2 from './images/c++2.png';
+
 
 import questionsData from './ques.json';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();
-  const [isMobile, setIsMobile] = useState(window.innerWidth > 768);
- 
-  const [msg2,setMsg2]  = useState('');
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
+
   const [questionData, setQuestionData] = useState(questionsData);
   const [currentTopic, setCurrentTopic] = useState(questionsData.Practice);
   const [id, setId] = useState(0);
